@@ -19,7 +19,7 @@ public class NumberStack {
         Scanner scan = new Scanner(System.in);
         
         //Prompt user to enter an integer between 1 and 9
-        System.out.print("Enter a number between 1 and 9  ");
+        System.out.print("Enter an integer between 1 and 9  ");
         
         //Confirm that an integer is entered
         if (scan.hasNextInt()) {
@@ -130,6 +130,13 @@ public class NumberStack {
                     number++;
                 } while (number <= digit);
             }
+            else {
+                System.out.println("You did not enter an integer between 1 and 9, bro");
+                return;
+            }
+        }
+        else {
+            System.out.println("An integer aint got no decimals dog, try again");
         }
     }
 }
